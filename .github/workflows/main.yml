@@ -1,0 +1,16 @@
+name: Ejercicio 1
+
+on: push
+
+jobs: 
+  hola_mundo:
+    runs-on: Ubuntu-latest
+
+    steps:
+      - name: Descargar codigo
+      - name: Bajar codigo
+        uses: actions/checkout@v4
+      - name: Instalar
+        run: pip install pytest
+      - name: Probar codigo
+        run: python3 test.py
